@@ -1,0 +1,14 @@
+
+AutoGitfiti v${project.version}
+
+Usage: java -jar %{jarfile.name} [operation] [options]
+
+Operations:
+    help                Display this page.
+
+Options:
+    -repo=<path>        Specify where the repo directory is.
+                        Default "./.repo/".
+
+    -pattern=<path>     Specify where the pattern file is, the base dir is the repo dir.
+                        Default "../default.pattern"
