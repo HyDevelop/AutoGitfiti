@@ -1,0 +1,17 @@
+// Define maximum amount of commits.
+max auto   // Auto detects the highest commit and use it as the max.
+
+// Define characters with percentage of commits
+def #=4    // This sets the value of "#" to 4 colored.
+def *=2    // This sets the value of "*" to 2 colored.
+def .=0    // This sets the value of "." to 0
+
+[Start] // This sets the graph. The height has to be 7. All spaces will be ignored.
+. . . * . . . . . * . . . . .
+. . * . * . . . * . * . . . .
+. . * . . * * * . . . * * * *
+. * . . . * . * . . . . . . .
+. * . . . . . . . . . * * . .
+. * . * . . * . . * . . . . .
+* . . . . * * * . . . * * . .
+[End]
