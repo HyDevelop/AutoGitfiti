@@ -1,0 +1,15 @@
+// Define characters with amount of commits
+def #=100    // This sets the value of "#" to 100 commits.
+def /=50     // This sets the value of "/" to 50 commits.
+def *=1      // This sets the value of "*" to 1 commit.
+def .=0      // This sets the value of "." to do nothing.
+
+[Start] // This sets the graph. The height has to be 7, and the max length is 53. All spaces will be ignored.
+. . . * . . . . . * . . . . .
+. . * . * . . . * . * . . . .
+. . * . . * * * . . . * * * *
+. * . . . * . * . . . . . . .
+. * . . . . . . . . . * * . .
+. * . * . . * . . * . . . . .
+* . . . . * * * . . . * * . .
+[End]
