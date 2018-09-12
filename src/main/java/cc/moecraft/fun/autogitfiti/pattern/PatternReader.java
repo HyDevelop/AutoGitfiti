@@ -10,4 +10,9 @@ package cc.moecraft.fun.autogitfiti.pattern;
  */
 class PatternReader
 {
+    static String removeComments(String original)
+    {
+        int offset = original.indexOf("//");
+        return offset != -1 ? original.substring(0, offset) : original;
+    }
 }
