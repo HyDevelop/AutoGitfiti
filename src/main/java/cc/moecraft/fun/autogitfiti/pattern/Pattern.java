@@ -20,4 +20,9 @@ public class Pattern
 {
     private Map<Character, Integer> charValueMap = new HashMap<>();
     private int[][] patternArray = new int[53][7]; // [x][y]
+
+    public Pattern(File file) throws IOException
+    {
+    }
+
 }
