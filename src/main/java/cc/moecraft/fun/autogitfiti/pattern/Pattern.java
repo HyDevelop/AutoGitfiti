@@ -37,4 +37,8 @@ public class Pattern
         fileReader.close();
     }
 
+    private enum State
+    {
+        NORMAL, STARTED
+    }
 }
