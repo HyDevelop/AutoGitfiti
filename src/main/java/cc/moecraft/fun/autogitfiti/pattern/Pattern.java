@@ -43,6 +43,11 @@ public class Pattern
                 state = State.STARTED;
                 continue;
             }
+            if (lowLine.startsWith("[end]"))
+            {
+                break;
+            }
+
         }
 
         fileReader.close();
