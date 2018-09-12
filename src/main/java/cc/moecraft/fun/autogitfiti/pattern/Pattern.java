@@ -41,4 +41,9 @@ public class Pattern
     {
         NORMAL, STARTED
     }
+
+    private static void error(long lineCount, String line, String message)
+    {
+        throw new RuntimeException(message + "\n(At line: " + lineCount + " - " + line + ")");
+    }
 }
