@@ -30,6 +30,7 @@ public class Pattern
 
         while ((rawLine = reader.readLine()) != null)
         {
+            line = PatternReader.removeComments(rawLine);
         }
 
         fileReader.close();
