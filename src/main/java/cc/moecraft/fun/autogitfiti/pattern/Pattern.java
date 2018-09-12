@@ -48,6 +48,8 @@ public class Pattern
                 break;
             }
 
+            line = line.replace(" ", "");
+
             if (state == State.NORMAL)
             {
                 if (lowLine.startsWith("def "))
