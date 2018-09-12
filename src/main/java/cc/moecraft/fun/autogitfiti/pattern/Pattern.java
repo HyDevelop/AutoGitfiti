@@ -48,6 +48,14 @@ public class Pattern
                 break;
             }
 
+            if (state == State.NORMAL)
+            {
+
+            }
+            else // STARTED
+            {
+
+            }
         }
 
         fileReader.close();
