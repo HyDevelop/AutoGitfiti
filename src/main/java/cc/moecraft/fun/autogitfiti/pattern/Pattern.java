@@ -23,6 +23,8 @@ public class Pattern
 
     public Pattern(File file) throws IOException
     {
+        FileReader fileReader = new FileReader(file);
+        BufferedReader reader = new BufferedReader(fileReader);
     }
 
 }
