@@ -36,6 +36,13 @@ public class Pattern
             lineCount ++;
             line = PatternReader.removeComments(rawLine);
             String lowLine = line.toLowerCase();
+
+            if (lowLine.startsWith("[start]"))
+            {
+                if (state == State.STARTED) error(lineCount, line, "Invalid: Already had a [start] that didn't end yet...");
+                state = State.STARTED;
+                continue;
+            }
         }
 
         fileReader.close();
