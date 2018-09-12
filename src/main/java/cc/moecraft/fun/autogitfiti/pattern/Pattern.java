@@ -32,6 +32,7 @@ public class Pattern
         {
         }
 
+        fileReader.close();
     }
 
 }
