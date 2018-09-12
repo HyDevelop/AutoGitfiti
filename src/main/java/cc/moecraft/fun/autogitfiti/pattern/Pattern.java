@@ -50,7 +50,10 @@ public class Pattern
 
             if (state == State.NORMAL)
             {
+                if (lowLine.startsWith("def "))
+                {
 
+                }
             }
             else // STARTED
             {
