@@ -25,6 +25,13 @@ public class Pattern
     {
         FileReader fileReader = new FileReader(file);
         BufferedReader reader = new BufferedReader(fileReader);
+        String rawLine;
+        String line;
+
+        while ((rawLine = reader.readLine()) != null)
+        {
+        }
+
     }
 
 }
