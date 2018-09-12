@@ -18,4 +18,5 @@ import java.util.Map;
 @Data
 public class Pattern
 {
+    private Map<Character, Integer> charValueMap = new HashMap<>();
 }
