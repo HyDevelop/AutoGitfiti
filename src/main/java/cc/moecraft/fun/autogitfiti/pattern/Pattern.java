@@ -25,11 +25,14 @@ public class Pattern
     {
         FileReader fileReader = new FileReader(file);
         BufferedReader reader = new BufferedReader(fileReader);
+
+        long lineCount = 0;
         String rawLine;
         String line;
 
         while ((rawLine = reader.readLine()) != null)
         {
+            lineCount ++;
             line = PatternReader.removeComments(rawLine);
             String lowLine = line.toLowerCase();
         }
