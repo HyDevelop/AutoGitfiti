@@ -54,6 +54,7 @@ public class Pattern
             {
                 if (lowLine.startsWith("def "))
                 {
+                    line = line.substring(3, line.length());
 
                 }
             }
