@@ -60,6 +60,8 @@ public class Pattern
 
                     Character alias = line.charAt(0);
                     line = line.substring(2, line.length());
+                    Integer value = Integer.valueOf(line);
+
                 }
             }
             else // STARTED
