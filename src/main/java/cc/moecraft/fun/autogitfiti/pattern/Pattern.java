@@ -62,6 +62,7 @@ public class Pattern
                     line = line.substring(2, line.length());
                     Integer value = Integer.valueOf(line);
 
+                    charValueMap.put(alias, value);
                 }
             }
             else // STARTED
