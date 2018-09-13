@@ -59,6 +59,7 @@ public class Pattern
                     if (line.charAt(1) != '=') error(lineCount, line, "Invalid: No '=' is detected at char loc 2");
 
                     Character alias = line.charAt(0);
+                    line = line.substring(2, line.length());
                 }
             }
             else // STARTED
