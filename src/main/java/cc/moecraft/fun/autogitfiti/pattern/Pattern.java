@@ -69,6 +69,7 @@ public class Pattern
             {
                 for (int i = 0; i < line.length(); i++)
                 {
+                    char alias = line.charAt(i);
                 }
 
             }
