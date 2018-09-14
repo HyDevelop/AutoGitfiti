@@ -70,6 +70,7 @@ public class Pattern
                 for (int i = 0; i < line.length(); i++)
                 {
                     char alias = line.charAt(i);
+                    if (!charValueMap.containsKey(alias)) error(lineCount, line, "Invalid: '" + alias + "' is not defined.");
                 }
 
             }
