@@ -68,6 +68,7 @@ public class Pattern
             }
             else // STARTED
             {
+                if (line.isEmpty()) continue;
                 for (int i = 0; i < line.length(); i++)
                 {
                     char alias = line.charAt(i);
