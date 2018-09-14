@@ -67,6 +67,9 @@ public class Pattern
             }
             else // STARTED
             {
+                for (int i = 0; i < line.length(); i++)
+                {
+                }
 
             }
         }
