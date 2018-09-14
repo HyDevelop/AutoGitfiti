@@ -27,6 +27,7 @@ public class Pattern
         BufferedReader reader = new BufferedReader(fileReader);
 
         long lineCount = 0;
+        int lineCountAfterStart = 0;
         State state = State.NORMAL;
         String rawLine;
         String line;
@@ -75,6 +76,7 @@ public class Pattern
                     patternArray[i][lineCountAfterStart] = charValueMap.get(alias);
                 }
 
+                lineCountAfterStart ++;
             }
         }
 
