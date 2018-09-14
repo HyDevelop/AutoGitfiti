@@ -71,6 +71,8 @@ public class Pattern
                 {
                     char alias = line.charAt(i);
                     if (!charValueMap.containsKey(alias)) error(lineCount, line, "Invalid: '" + alias + "' is not defined.");
+
+                    patternArray[i][lineCountAfterStart] = charValueMap.get(alias);
                 }
 
             }
