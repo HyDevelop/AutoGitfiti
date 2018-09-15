@@ -20,6 +20,7 @@ import static cc.moecraft.fun.autogitfiti.git.GitUtils.Cache.*;
  *
  * @author Hykilpikonna
  */
+@SuppressWarnings("WeakerAccess")
 public class GitUtils
 {
     /**
