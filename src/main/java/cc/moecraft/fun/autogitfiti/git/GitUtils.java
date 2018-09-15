@@ -27,6 +27,8 @@ public class GitUtils
      */
     public static class Cache
     {
+        public static String authorName = "";
+        public static String authorEmail = "";
         /**
          * Author信息缓存
          */
