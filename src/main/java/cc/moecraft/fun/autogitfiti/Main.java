@@ -45,5 +45,6 @@ public class Main
 
     private static String run(Args args) throws Exception
     {
+        Map<String, String> options = args.getOptions();
     }
 }
