@@ -30,6 +30,7 @@ public class Main
 {
     public static void main(String[] rawArgs) throws Exception
     {
+        Args args = ArgsUtils.parse(rawArgs);
 
     }
 }
