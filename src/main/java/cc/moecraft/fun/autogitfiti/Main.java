@@ -32,5 +32,10 @@ public class Main
     {
         Args args = ArgsUtils.parse(rawArgs);
 
+        if (args.getOperations().size() == 0)
+        {
+            printHelp();
+            return;
+        }
     }
 }
