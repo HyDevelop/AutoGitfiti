@@ -17,4 +17,7 @@ import java.util.Date;
  */
 public class Renderer
 {
+    public static void render(Pattern pattern, Repository repository)
+    {
+    }
 }
