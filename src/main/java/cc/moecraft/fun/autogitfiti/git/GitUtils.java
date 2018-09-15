@@ -33,6 +33,20 @@ public class GitUtils
          * Author信息缓存
          */
         private static final Map<Date, PersonIdent> author = new HashMap<>();
+
+        /**
+         * 因为每个Author信息都包含日期,
+         * 所以按日期缓存好,
+         * 这样如果在一个格子提交50次的话就不用重新构造50个新对象了
+         * @param date 日期
+         * @return Author
+         */
+        public static PersonIdent getAuthor(Date date)
+        {
+            if (author.containsKey(date)) return author.get(date);
+            author.put(date, new PersonIdent(authorName, authorEmail, date, TimeZone.getTimeZone("UTC")));
+            return getAuthor(date);
+        }
     }
 
 }
