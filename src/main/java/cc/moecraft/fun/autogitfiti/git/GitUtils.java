@@ -27,6 +27,10 @@ public class GitUtils
      */
     public static class Cache
     {
+        /**
+         * Author信息缓存
+         */
+        private static final Map<Date, PersonIdent> author = new HashMap<>();
     }
 
 }
