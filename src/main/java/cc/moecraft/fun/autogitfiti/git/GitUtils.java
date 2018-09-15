@@ -22,4 +22,11 @@ import static cc.moecraft.fun.autogitfiti.git.GitUtils.Cache.*;
  */
 public class GitUtils
 {
+    /**
+     * 缓存类
+     */
+    public static class Cache
+    {
+    }
+
 }
