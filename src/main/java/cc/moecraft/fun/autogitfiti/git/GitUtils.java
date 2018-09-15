@@ -50,4 +50,17 @@ public class GitUtils
         }
     }
 
+    /**
+     * 提交一次
+     * @param git Git对象
+     * @param date 日期
+     */
+    public static void commit(Git git, Date date) throws GitAPIException
+    {
+        CommitCommand commit = git.commit();
+        commit.setAuthor(getAuthor(date));
+        commit.setMessage("");
+        commit.call();
+    }
+
 }
