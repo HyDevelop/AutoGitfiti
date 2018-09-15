@@ -37,6 +37,10 @@ public class Main
             printHelp();
             return;
         }
+
+        String text = run(args);
+
+        if (text != null) System.out.println(text);
     }
 
     private static String run(Args args) throws Exception
