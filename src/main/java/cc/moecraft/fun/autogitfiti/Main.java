@@ -38,4 +38,8 @@ public class Main
             return;
         }
     }
+
+    private static String run(Args args) throws Exception
+    {
+    }
 }
