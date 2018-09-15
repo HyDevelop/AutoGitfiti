@@ -63,4 +63,24 @@ public class GitUtils
         commit.call();
     }
 
+    /**
+     * 提交很多次
+     * @param git Git对象
+     * @param date 日期
+     * @param times 多少次
+     */
+    public static void commit(Git git, Date date, int times)
+    {
+        for (int i = 0; i < times; i++)
+        {
+            try
+            {
+                commit(git, date);
+            }
+            catch (GitAPIException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
 }
