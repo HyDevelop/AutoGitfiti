@@ -17,6 +17,15 @@ import java.util.Date;
 public class ContributionChart
 {
     private Date[][] dateMap = new Date[53][7];
+
+    /**
+     * 提前计算好日期表, 这样后面要用的时候就可以不用计算了
+     */
+    public ContributionChart()
+    {
+        this(new Date());
+    }
+
     private ContributionChart(Date date)
     {
         Calendar calendar = Calendar.getInstance();
