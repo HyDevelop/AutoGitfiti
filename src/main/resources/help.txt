@@ -19,3 +19,9 @@ Options:
 
     -pattern=<path>     Specify where the pattern file is, the base dir is the repo dir.
                         Default "../default.pattern"
+
+    -author=<name>      Specify the name of the commit author.
+                        Default "" for efficiency and disk space.
+
+    -email=<email>      Specify the email of the commit author.
+                        Default "" for efficiency and disk space.
