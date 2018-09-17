@@ -56,6 +56,7 @@ public class Main
         FileRepository repository = new FileRepository(repoDir);
         Git git = new Git(repository);
 
+        File patternFile = new File(repoBaseDir, options.getOrDefault("pattern", "../default.pattern"));
     }
 
     private static void printHelp()
