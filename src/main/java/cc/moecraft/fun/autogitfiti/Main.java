@@ -64,6 +64,7 @@ public class Main
         {
             case "help": printHelp(); return null;
             case "create": create(repository); return "Done.";
+            case "reset": reset(git); return "Done.";
         }
         return "Unidentified command: " + args.getOperations().get(0);
     }
