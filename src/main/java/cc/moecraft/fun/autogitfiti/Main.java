@@ -59,6 +59,12 @@ public class Main
         File patternFile = new File(repoBaseDir, options.getOrDefault("pattern", "../default.pattern"));
         if (!patternFile.exists()) FileUtils.copyResource(Main.class, "default.pattern", patternFile);
         Pattern pattern = new Pattern(patternFile);
+
+        switch (args.getOperations().get(0))
+        {
+            case "help": printHelp(); return null;
+        }
+        return "Unidentified command: " + args.getOperations().get(0);
     }
 
     private static void printHelp()
