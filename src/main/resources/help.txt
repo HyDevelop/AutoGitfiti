@@ -6,6 +6,7 @@ Usage: java -jar %{jarfile.name} [operation] [options]
 Operations:
     help                Display this page.
 
+    auto                Start an automatic gitfiti job that do run every week.
     run                 = create + reset + draw + push
 
     create              Creates the repo (Will not override if already exists).
