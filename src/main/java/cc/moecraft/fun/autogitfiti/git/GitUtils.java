@@ -30,6 +30,17 @@ public class GitUtils
     {
         public static String authorName = "";
         public static String authorEmail = "";
+        public static String remote = null;
+        public static String username = null;
+        public static String password = null;
+
+        public static void init(String remote, String username, String password)
+        {
+            Cache.remote = remote;
+            Cache.username = username;
+            Cache.password = password;
+        }
+
         /**
          * Author信息缓存
          */
@@ -127,6 +138,8 @@ public class GitUtils
         PushCommand push = git.push();
         push.setForce(true);
         push.setPushAll();
+        push.setRemote(remote);
+        push.setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password));
         push.call();
     }
 
