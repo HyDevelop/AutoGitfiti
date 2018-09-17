@@ -56,6 +56,17 @@ public class GitUtils
     }
 
     /**
+     * 获取格子的日期
+     * @param x X坐标
+     * @param y Y坐标
+     * @return 日期
+     */
+    public static Date getDate(int x, int y)
+    {
+        return Cache.contributionChart.getDateMap()[x][y];
+    }
+
+    /**
      * 提交一次
      * @param git Git对象
      * @param date 日期
