@@ -50,6 +50,8 @@ public class Main
         authorEmail = options.getOrDefault("email", authorEmail);
         authorName = options.getOrDefault("name", authorName);
 
+        File repoBaseDir = new File(options.getOrDefault("repo", "./.repo/"));
+
     }
 
     private static void printHelp()
