@@ -129,4 +129,9 @@ public class GitUtils
         push.setPushAll();
         push.call();
     }
+
+    public static void create(FileRepository repo) throws IOException
+    {
+        repo.create();
+    }
 }
