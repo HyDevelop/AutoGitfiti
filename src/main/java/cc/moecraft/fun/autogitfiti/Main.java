@@ -46,6 +46,10 @@ public class Main
     private static String run(Args args) throws Exception
     {
         Map<String, String> options = args.getOptions();
+
+        authorEmail = options.getOrDefault("email", authorEmail);
+        authorName = options.getOrDefault("name", authorName);
+
     }
 
     private static void printHelp()
