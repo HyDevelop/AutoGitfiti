@@ -63,6 +63,7 @@ public class Main
         switch (args.getOperations().get(0))
         {
             case "help": printHelp(); return null;
+            case "create": create(repository); return "Done.";
         }
         return "Unidentified command: " + args.getOperations().get(0);
     }
