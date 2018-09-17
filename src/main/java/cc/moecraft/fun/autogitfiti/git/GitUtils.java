@@ -115,5 +115,10 @@ public class GitUtils
         delete.setBranchNames("master");
         delete.setForce(true);
         delete.call();
+
+        RenameBranchCommand rename = git.branchRename();
+        rename.setOldName(branchName);
+        rename.setNewName("master");
+        rename.call();
     }
 }
