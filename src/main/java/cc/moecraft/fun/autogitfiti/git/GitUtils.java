@@ -121,4 +121,12 @@ public class GitUtils
         rename.setNewName("master");
         rename.call();
     }
+
+    public static void push(Git git) throws GitAPIException
+    {
+        PushCommand push = git.push();
+        push.setForce(true);
+        push.setPushAll();
+        push.call();
+    }
 }
