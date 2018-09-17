@@ -110,5 +110,10 @@ public class GitUtils
         checkout.call();
 
         commit(git, new Calendar.Builder().setDate(2001, 1, 1).build().getTime());
+
+        DeleteBranchCommand delete = git.branchDelete();
+        delete.setBranchNames("master");
+        delete.setForce(true);
+        delete.call();
     }
 }
