@@ -47,6 +47,12 @@ public class Main
     {
         Map<String, String> options = args.getOptions();
 
+        if (!options.containsKey("remote")) return "Error: Push remote not defined.";
+        if (!options.containsKey("u")) return "Error: Username not defined.";
+        if (!options.containsKey("p")) return "Error: Password not defined.";
+
+        init(options.get("remote"), options.get("u"), options.get("p"));
+
         authorEmail = options.getOrDefault("email", authorEmail);
         authorName = options.getOrDefault("name", authorName);
 
