@@ -52,6 +52,10 @@ public class Main
 
         File repoBaseDir = new File(options.getOrDefault("repo", "./.repo/"));
 
+        File repoDir = new File(repoBaseDir, ".git/");
+        FileRepository repository = new FileRepository(repoDir);
+        Git git = new Git(repository);
+
     }
 
     private static void printHelp()
