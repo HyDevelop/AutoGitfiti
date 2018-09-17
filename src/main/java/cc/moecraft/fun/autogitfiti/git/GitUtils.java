@@ -48,6 +48,11 @@ public class GitUtils
             author.put(date, new PersonIdent(authorName, authorEmail, date, TimeZone.getTimeZone("UTC")));
             return getAuthor(date);
         }
+
+        /**
+         * 提前计算好格子的日期
+         */
+        private static final ContributionChart contributionChart = new ContributionChart();
     }
 
     /**
