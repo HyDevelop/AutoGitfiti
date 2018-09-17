@@ -6,6 +6,13 @@ Usage: java -jar %{jarfile.name} [operation] [options]
 Operations:
     help                Display this page.
 
+    run                 = create + reset + draw + push
+
+    create              Creates the repo (Will not override if already exists).
+    reset               Delete the existing commits and reset (This is required after create).
+    push                Push to remote.
+    draw                Draw once, Note that this will NOT automatically do delete operation.
+
 Options:
     -repo=<path>        Specify where the repo directory is.
                         Default "./.repo/".
