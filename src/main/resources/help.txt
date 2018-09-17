@@ -15,6 +15,11 @@ Operations:
     draw                Draw once, Note that this will NOT automatically do delete operation.
 
 Options:
+    -remote=<remote>    Specify github push remote, see https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad
+    -u=<username>       Specify the username of your github account.
+    -p=<password>       Specify the password of your github account.
+                        No default value because they are required.
+
     -repo=<path>        Specify where the repo directory is.
                         Default "./.repo/".
 
