@@ -102,5 +102,11 @@ public class GitUtils
 
     public static void reset(Git git) throws GitAPIException
     {
+        String branchName = "TEMP_BRANCH_" + System.currentTimeMillis();
+
+        CheckoutCommand checkout = git.checkout();
+        checkout.setOrphan(true);
+        checkout.setName(branchName);
+        checkout.call();
     }
 }
