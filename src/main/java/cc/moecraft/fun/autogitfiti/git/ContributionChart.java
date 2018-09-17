@@ -13,6 +13,8 @@ import java.util.Date;
  *
  * @author Hykilpikonna
  */
+@Data
 public class ContributionChart
 {
+    private Date[][] dateMap = new Date[53][7];
 }
