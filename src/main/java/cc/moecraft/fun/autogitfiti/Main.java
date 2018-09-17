@@ -67,6 +67,18 @@ public class Main
             case "reset": reset(git); return "Done.";
             case "push": push(git); return "Done.";
             case "draw": render(pattern, repository); return "Done.";
+            case "run":
+            {
+                create(repository);
+                System.out.println("Create Done.");
+                reset(git);
+                System.out.println("Reset Done.");
+                render(pattern, repository);
+                System.out.println("Draw Done.");
+                push(git);
+                System.out.println("Push Done.");
+                return "All Done.";
+            }
         }
         return "Unidentified command: " + args.getOperations().get(0);
     }
