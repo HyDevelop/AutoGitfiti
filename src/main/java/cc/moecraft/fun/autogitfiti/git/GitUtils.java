@@ -132,6 +132,7 @@ public class GitUtils
 
     public static void create(FileRepository repo) throws IOException
     {
+        if (repo.getConfig().getFile().exists()) return;
         repo.create();
     }
 }
