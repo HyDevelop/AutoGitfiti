@@ -99,4 +99,8 @@ public class GitUtils
             }
         }
     }
+
+    public static void reset(Git git) throws GitAPIException
+    {
+    }
 }
