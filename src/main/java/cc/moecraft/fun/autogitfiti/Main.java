@@ -57,6 +57,7 @@ public class Main
         Git git = new Git(repository);
 
         File patternFile = new File(repoBaseDir, options.getOrDefault("pattern", "../default.pattern"));
+        if (!patternFile.exists()) FileUtils.copyResource(Main.class, "default.pattern", patternFile);
     }
 
     private static void printHelp()
