@@ -108,5 +108,7 @@ public class GitUtils
         checkout.setOrphan(true);
         checkout.setName(branchName);
         checkout.call();
+
+        commit(git, new Calendar.Builder().setDate(2001, 1, 1).build().getTime());
     }
 }
