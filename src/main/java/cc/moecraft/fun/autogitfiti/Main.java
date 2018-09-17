@@ -47,4 +47,9 @@ public class Main
     {
         Map<String, String> options = args.getOptions();
     }
+
+    private static void printHelp()
+    {
+        ResourceUtils.printResource(System.out::println, "help.txt", "jarfile.name", getJarfileName());
+    }
 }
