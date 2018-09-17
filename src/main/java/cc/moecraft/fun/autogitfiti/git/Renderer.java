@@ -19,5 +19,16 @@ public class Renderer
 {
     public static void render(Pattern pattern, Repository repository)
     {
+        Git git = new Git(repository);
+
+        for (int x = 0; x < pattern.getPatternArray().length; x++) // 每一列
+        {
+            int[] column = pattern.getPatternArray()[x];
+            for (int y = 0; y < column.length; y++) // 每一个数字
+            {
+                Date date = GitUtils.getDate(x, y);
+                GitUtils.commit(git, date, column[y]);
+            }
+        }
     }
 }
